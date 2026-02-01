@@ -26,7 +26,7 @@ Tâche :
     git status
 Question :
 • Quelle commande Git utilisez-vous ?
-    Firstly, the command "cd" to arrive in the good folder on my local machine
+    Firstly, the command "cd" to open the good folder on my local machine
     After that:
         - "git init" to create a new empty folder in my local repo
         - "git clone" with the URL of remote repo to copy the folder from GitHub
@@ -72,7 +72,8 @@ Tâche :
     git pull: to pull README file modifications on my local repo
     git diff: to check differences between import files from remote repo and actual files of local repo
     git merge: to merge import remote data on the local repo (It works if there's only adding data, no deletion)
-               Resolve merge conflict if necessary and try again "git merge" command
+
+    * Resolve merge conflict if necessary and try again "git merge" command
 
 2. Vérifier que vos fichiers sont toujours présents.
     git status?? or maybe check my files on my local repo??
@@ -88,11 +89,36 @@ Partie 5 — Push refusé
 Situation : Vous refaites un commit et Git refuse le push.
 Tâche :
 1. Décider quoi faire avant de réessayer.
+    - git status: to check if all modified files are saved. Do "git add ." if necessary and try again.
+    - git diff: to check differences between last commit and now. Fix the problem, do "git add" command and try
+      again to push it 
+    - last option but with risks, git push --force: this can overwrite changes on the remote repo and create merge
+      conflict for the next
 2. Expliquer pourquoi Git bloque l’action.
+    Because there is a difference between files on local repo and remote repo
 Question :
 • Quel problème Git essaie-t-il d’éviter ?
+    the merge conflict: the differences between previous and new files
+
+
 
 Questions de réflexion
 1. Quelle est la différence entre dépôt local et distant ?
+    Local repo: data on my machine, only me can see, modify, remove,... I can do whatever I want without disturb
+    the work of somebody else.
+
+    Remote repo: it's like a cloud, everybody can see, modify and remove files, but, each change influences the
+    work of the others (teamates, colleagues) and can create conflict (merge conflict)
+
 2. Quand utiliser git clone plutôt que git init ?
+    git clone: when you join a project and you need to upload files from remote repo to your local repo.
+
+    git init: when you create a new project, folder or file on your local repo, to add changes and after push it
+    to remote repo
+
 3. Quelle bonne habitude évite la majorité des erreurs Git ?
+    Always make "git add" after changes to save it.
+    Always check satus after a commit and before to push to see if all files and changes are tracked and saved.
+    Often do commit to come back to a previous one if necessary.
+    Check differences between feature and HEAD (or master) before to merge them to avoid merge conflict.
+    Check "git branch" after a switch to be sure that we are on the good branch.
