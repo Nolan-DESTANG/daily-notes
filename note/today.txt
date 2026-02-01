@@ -14,6 +14,8 @@ Vous travaillez sur un projet hébergé sur GitHub.
 • Nom du dépôt : daily-notes
 • Outil : VS Code.
 
+
+
 Partie 1 — Récupérer le projet
 Situation : Le dépôt existe sur GitHub, mais pas encore sur votre ordinateur.
 Tâche :
@@ -33,11 +35,10 @@ Question :
 • Comment vérifier que tout est propre ?
     When we do "git status" command, files are written green
 
+
+
 Partie 2 — Modifier le projet
 
-GIT & GITHUB Lenn Okuro
-
-2
 Situation : Vous ajoutez un fichier notes/today.txt.
 Tâche :
 1. Créez le fichier et écrivez quelques lignes.
@@ -49,6 +50,8 @@ Question :
 • Pourquoi git status est-il important ?
     It permises to see if files are tracked and saved when we add modifications to them
 
+
+
 Partie 3 — Envoyer les changements
 Situation : Les changements sont uniquement en local.
 Tâche :
@@ -59,20 +62,28 @@ Question :
 • Que fait réellement git push ?
     it sends data to the remote repo
 
+
+
 Partie 4 — Changements distants
 Situation : Un collègue a modifié le README directement sur GitHub. Votre dépôt local n’est
 plus à jour.
 Tâche :
 1. Mettre à jour votre dépôt local.
-    git pull, git merge
+    git pull: to pull README file modifications on my local repo
+    git diff: to check differences between import files from remote repo and actual files of local repo
+    git merge: to merge import remote data on the local repo (It works if there's only adding data, no deletion)
+               Resolve merge conflict if necessary and try again "git merge" command
+
 2. Vérifier que vos fichiers sont toujours présents.
+    git status?? or maybe check my files on my local repo??
 
 Question :
 • Pourquoi faut-il faire un pull avant un push ?
+    To add new data from a modified file to my local file, check and modify differences, and then merge files and 
+    push them to remote repo 
 
-GIT & GITHUB Lenn Okuro
 
-3
+
 Partie 5 — Push refusé
 Situation : Vous refaites un commit et Git refuse le push.
 Tâche :
