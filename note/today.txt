@@ -1,4 +1,4 @@
-GIT & GITHUB Lenn Okuro
+<h1> GIT & GITHUB Lenn Okuro <h1>
 
 Fiche d'Exercice : Flux de travail Git
 Outils : VS Code + GitHub
