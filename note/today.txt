@@ -1,0 +1,80 @@
+GIT & GITHUB Lenn Okuro
+
+Fiche d'Exercice : Flux de travail Git
+Outils : VS Code + GitHub
+Objectif
+Simuler un usage réel de Git. Vous allez pratiquer :
+• Travailler avec un dépôt distant.
+• Faire des modifications locales.
+• Récupérer des changements depuis GitHub.
+• Comprendre quand utiliser push ou pull.
+
+Scénario
+Vous travaillez sur un projet hébergé sur GitHub.
+• Nom du dépôt : daily-notes
+• Outil : VS Code.
+
+Partie 1 — Récupérer le projet
+Situation : Le dépôt existe sur GitHub, mais pas encore sur votre ordinateur.
+Tâche :
+1. Récupérer le dépôt en local.
+2. L’ouvrir dans VS Code.
+3. Vérifier que Git est bien connecté.
+Question :
+• Quelle commande Git utilisez-vous ?
+    Firstly, the command "cd" to arrive in the good folder on my local machine
+    After that:
+        - "git init" to create a new empty folder in my local repo
+        - "git clone" with the URL of remote repo to copy the folder from GitHub
+        - "git status" to check if the folder is connected to local repo
+        - "git add" (for next steps) to track files
+• Comment vérifier que tout est propre ?
+    When we do "git status" command, files are written green
+
+Partie 2 — Modifier le projet
+
+GIT & GITHUB Lenn Okuro
+
+2
+Situation : Vous ajoutez un fichier notes/today.txt.
+Tâche :
+1. Créez le fichier et écrivez quelques lignes.
+2. Vérifier l’état du dépôt.
+3. Enregistrer la modification dans l’historique Git.
+Question :
+• Pourquoi git status est-il important ?
+    It permises to see if files are tracked and saved when we add modifications to them
+
+Partie 3 — Envoyer les changements
+Situation : Les changements sont uniquement en local.
+Tâche :
+1. Envoyer les changements vers GitHub.
+2. Vérifier sur GitHub que le fichier est visible.
+Question :
+• Que fait réellement git push ?
+
+Partie 4 — Changements distants
+Situation : Un collègue a modifié le README directement sur GitHub. Votre dépôt local n’est
+plus à jour.
+Tâche :
+1. Mettre à jour votre dépôt local.
+2. Vérifier que vos fichiers sont toujours présents.
+
+Question :
+• Pourquoi faut-il faire un pull avant un push ?
+
+GIT & GITHUB Lenn Okuro
+
+3
+Partie 5 — Push refusé
+Situation : Vous refaites un commit et Git refuse le push.
+Tâche :
+1. Décider quoi faire avant de réessayer.
+2. Expliquer pourquoi Git bloque l’action.
+Question :
+• Quel problème Git essaie-t-il d’éviter ?
+
+Questions de réflexion
+1. Quelle est la différence entre dépôt local et distant ?
+2. Quand utiliser git clone plutôt que git init ?
+3. Quelle bonne habitude évite la majorité des erreurs Git ?
