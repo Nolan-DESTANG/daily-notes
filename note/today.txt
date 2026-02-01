@@ -18,8 +18,10 @@ Partie 1 — Récupérer le projet
 Situation : Le dépôt existe sur GitHub, mais pas encore sur votre ordinateur.
 Tâche :
 1. Récupérer le dépôt en local.
+    git init, git clone
 2. L’ouvrir dans VS Code.
 3. Vérifier que Git est bien connecté.
+    git status
 Question :
 • Quelle commande Git utilisez-vous ?
     Firstly, the command "cd" to arrive in the good folder on my local machine
@@ -40,7 +42,9 @@ Situation : Vous ajoutez un fichier notes/today.txt.
 Tâche :
 1. Créez le fichier et écrivez quelques lignes.
 2. Vérifier l’état du dépôt.
+    git status
 3. Enregistrer la modification dans l’historique Git.
+    git add, git commit
 Question :
 • Pourquoi git status est-il important ?
     It permises to see if files are tracked and saved when we add modifications to them
@@ -49,15 +53,18 @@ Partie 3 — Envoyer les changements
 Situation : Les changements sont uniquement en local.
 Tâche :
 1. Envoyer les changements vers GitHub.
+    git push
 2. Vérifier sur GitHub que le fichier est visible.
 Question :
 • Que fait réellement git push ?
+    it sends data to the remote repo
 
 Partie 4 — Changements distants
 Situation : Un collègue a modifié le README directement sur GitHub. Votre dépôt local n’est
 plus à jour.
 Tâche :
 1. Mettre à jour votre dépôt local.
+    git pull, git merge
 2. Vérifier que vos fichiers sont toujours présents.
 
 Question :
